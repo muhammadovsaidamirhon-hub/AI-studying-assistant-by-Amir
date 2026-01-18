@@ -278,21 +278,3 @@ function searchWord() {
 // Show dictionary on page load
 showDictionary();
 // Predefined answers dictionary
-const QA_DICTIONARY = {
-  { question:"what is wood", answer: "Wood is a hard, fibrous material that comes from the trunk and branches of trees.",
-  { question:"what is water", answer: "Water is a transparent, tasteless, odorless liquid that is essential for life.",
-  { question:"what is sun":, answer "The Sun is the star at the center of our solar system that provides light and heat to Earth."
-};
-
-// Function to answer a question
-function answerQuestion() {
-  const question = document.getElementById("questionInput").value.trim().toLowerCase();
-  const answerOutput = document.getElementById("answerOutput");
-
-  if (QA_DICTIONARY[question]) {
-    answerOutput.textContent = QA_DICTIONARY[question];
-  } else {
-    answerOutput.textContent = "Sorry, I am not ready to answer this question yet.";
-  }
-}
-
