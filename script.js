@@ -279,9 +279,9 @@ function searchWord() {
 showDictionary();
 // Predefined answers dictionary
 const QA_DICTIONARY = {
-  "what is wood": "Wood is a hard, fibrous material that comes from the trunk and branches of trees.",
-  "what is water": "Water is a transparent, tasteless, odorless liquid that is essential for life.",
-  "what is sun": "The Sun is the star at the center of our solar system that provides light and heat to Earth."
+  { question:"what is wood", answer: "Wood is a hard, fibrous material that comes from the trunk and branches of trees.",
+  { question:"what is water", answer: "Water is a transparent, tasteless, odorless liquid that is essential for life.",
+  { question:"what is sun":, answer "The Sun is the star at the center of our solar system that provides light and heat to Earth."
 };
 
 // Function to answer a question
