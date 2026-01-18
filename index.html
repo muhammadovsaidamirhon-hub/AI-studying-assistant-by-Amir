@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Study Helper</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <h1>AI Study Helper</h1>
+
+  <textarea placeholder="Ask your study question..."></textarea>
+  <br>
+  <button onclick="askAI()">Ask AI</button>
+
+  <div id="answer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<h2>My Custom Dictionary</h2>
+
+<input type="text" id="newWord" placeholder="Enter new word">
+<input type="text" id="newMeaning" placeholder="Enter meaning">
+<button onclick="addWord()">Add Word</button>
+
+<h3>Search a word:</h3>
+<input type="text" id="searchWord" placeholder="Type a word to search">
+<button onclick="searchWord()">Search</button>
+<div id="searchResult"></div>
+
+<h3>My Dictionary:</h3>
+<div id="dictionaryBox"></div>
+
+<script>
+    // Show dictionary on page load
+    showDictionary();
+</script>
